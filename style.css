@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f0f5;
+    transition: background-color 0.5s ease;
+}
+
+.container{
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    color: #e44d26;
+}
+
+.heart-container{
+    position: relative;
+}
+
+#heart{
+    width: 100px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.message{
+    color: #333;
+    font-size: 18px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #d13517;
+}
+
+#countdown{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#bgColorPicker{
+    margin-top: 10px;
+}
+
+.confetti{
+    width:10px;
+    height: 10px;
+    background-color: #e44d26;
+    position: absolute;
+    top: 0;
+    animation: confetti-fall 3s ease-out infinite;
+}
+
+@keyframes confetti-fall{
+    0%{
+        transform: translateY(0) rotate(45deg);
+        opacity:1;
+    }
+    100%{
+        transform: translateY(600px) rotate(45deg);
+        opacity:1;       
+    }
+}
